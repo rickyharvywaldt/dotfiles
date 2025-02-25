@@ -2,6 +2,15 @@
 
 packages=(
   kubectl
+  k9s
+  kubectx
   direnv
-  fluxcd/tap/flux
 )
+
+# Iterate over the array and install each package
+for package in "${packages[@]}"; do
+  echo "Installing $package..."
+  mise u "$package"
+done
+
+echo "All packages have been installed."
