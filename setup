@@ -5,6 +5,7 @@ packages=(
   k9s
   kubectx
   direnv
+  flux2
 )
 
 # Iterate over the array and install each package
